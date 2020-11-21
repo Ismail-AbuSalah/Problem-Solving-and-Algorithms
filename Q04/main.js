@@ -1,4 +1,4 @@
-console.log('Problem Solving Q: 4 ');
+console.log("Problem Solving Q: 4 ");
 
 /* Username Validation */
 
@@ -14,7 +14,9 @@ If the username is valid then your program should return the string true, otherw
 */
 
 function usernameValidation(str) {
-  // YOUR CODE HERE
+  const reg1 = /^\w{4,25}$/;
+  const reg2 = /^[a-z]([a-zA-Z0-9_])*?[a-z 0-9]$/;
+  return reg1.test(str) && reg2.test(str);
 }
 
 /* 

@@ -1,4 +1,4 @@
-console.log('Problem Solving Q: 7');
+console.log("Problem Solving Q: 7");
 
 /* Sum Array Odd */
 
@@ -6,8 +6,12 @@ console.log('Problem Solving Q: 7');
 Write a function that returns the sum of odd numbers in an array.
 */
 
-function SumOddNumber() {
-  // YOUR CODE HERE
+function SumOddNumber(arr) {
+  return arr
+    .filter((item) => {
+      return item % 2;
+    })
+    .reduce((sum, num) => sum + num, 0);
 }
 
 /* 

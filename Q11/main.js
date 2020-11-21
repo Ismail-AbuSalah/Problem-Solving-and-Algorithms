@@ -1,4 +1,4 @@
-console.log('Problem Solving Q: 11');
+console.log("Problem Solving Q: 11");
 
 /* Is Power Of Two */
 
@@ -6,8 +6,13 @@ console.log('Problem Solving Q: 11');
 Write a function that returns YES if a number is a power of 2, and NO otherwise.
 */
 
-function isPowerOfTwo() {
-  // YOUR CODE HERE
+function isPowerOfTwo(num) {
+  if (num < 2 && num !== 1) {
+    return "No";
+  } else if (num === 1) {
+    return "yes";
+  }
+  return isPowerOfTwo(num / 2);
 }
 
 /* 
