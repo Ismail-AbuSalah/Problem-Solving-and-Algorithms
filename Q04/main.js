@@ -14,9 +14,8 @@ If the username is valid then your program should return the string true, otherw
 */
 
 function usernameValidation(str) {
-  const reg1 = /^\w{4,25}$/;
-  const reg2 = /^[a-z]([a-zA-Z0-9_])*?[a-z 0-9]$/;
-  return reg1.test(str) && reg2.test(str);
+  const reg1 = /^[a-zA-Z]([a-zA-Z0-9_]){3,18}[a-zA-Z0-9]$/;
+  return reg1.test(str);
 }
 
 /* 
