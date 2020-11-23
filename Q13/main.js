@@ -1,4 +1,4 @@
-console.log('Problem Solving Q: 13');
+console.log("Problem Solving Q: 13");
 
 /* Largest Possible Sum */
 
@@ -6,8 +6,19 @@ console.log('Problem Solving Q: 13');
 Write a function that calculates the largest possible sum of any n consecutive numbers in an array arr of integers (where n ≥ 1).
 */
 
-function largestPossibleSum() {
-  // YOUR CODE HERE
+function largestPossibleSum(arr, p) {
+  // if ((p = 1)) {
+  //   console.log(Math.max(...arr));
+  // }
+  const arr2=[]
+  for (let i = 0; i < arr.length; i++) {
+    arr2.push(arr.slice(i, p).reduce((acc, item) => acc + item, 0));
+    p++;
+  }
+  
+
+  console.log("arr :>> ", arr2);
+  console.log(Math.max(...arr2));
 }
 
 /* 
