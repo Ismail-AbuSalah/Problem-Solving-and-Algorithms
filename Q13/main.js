@@ -11,11 +11,14 @@ function largestPossibleSum(arr, p) {
   //   console.log(Math.max(...arr));
   // }
   const arr2=[]
-  for (let i = 0; i < arr.length; i++) {
+  // for (let i = 0; i < arr.length; i++) {
+  //   arr2.push(arr.slice(i, p).reduce((acc, item) => acc + item, 0));
+  //   p++;
+  // }
+  arr.forEach((item, i) => {
     arr2.push(arr.slice(i, p).reduce((acc, item) => acc + item, 0));
     p++;
-  }
-  
+  });
 
   console.log("arr :>> ", arr2);
   console.log(Math.max(...arr2));
