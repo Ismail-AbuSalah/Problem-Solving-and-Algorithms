@@ -1,4 +1,4 @@
-console.log('Problem Solving Q:18 ');
+console.log("Problem Solving Q:18 ");
 
 /*  factorial*/
 
@@ -7,8 +7,14 @@ Given an integer, n, return n! (n factorial)
 5! = 5 * 4 * 3 * 2 * 1
 */
 
-function factorial() {
+function factorial(n) {
   // YOUR CODE HERE
+
+  if (n === 0) {
+    return 1;
+  }
+
+  return n * factorial(n - 1);
 }
 
 /* 
