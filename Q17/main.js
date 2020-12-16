@@ -8,6 +8,7 @@ Given an arbitrary input string, return the first non-repeating character. For s
 
 function firstNonRepeatedCharacter() {
   // YOUR CODE HERE
+  
 }
 
 /* 
